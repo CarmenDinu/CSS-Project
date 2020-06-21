@@ -1,0 +1,63 @@
+/*Home page styling*/
+body {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 50px 500px 200px;
+  grid-gap: 1em;
+  margin: 0 auto;
+  width: 800px;
+  padding: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  grid-column: 1 / span 2;
+  background: #eaeaea;
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+  align-items: center;
+  justify-items: left left right;
+  padding: 10px;
+}
+header a {
+  color: darkgray;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header a:hover {
+  color: white;
+}
+main {
+  background: #eaeaea;
+}
+#firstArticle {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+p {
+  grid-column: 1 / span 2;
+}
+aside {
+  background: #eaeaea;
+}
+
+/* Footer Home page */
+footer {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  background: #eaeaea;
+  grid-gap: 1em;
+}
+#footer-contacts {
+  height: 100px;
+}
+#footer-navigation {
+  height: 100px;
+}
+#footer-copyright {
+  grid-column: 1 / span 3;
+  height: 100px;
+  justify-content: center;
+}
