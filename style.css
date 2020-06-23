@@ -1,63 +1,240 @@
 /*Home page styling*/
 body {
   display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 50px 500px 200px;
-  grid-gap: 1em;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   margin: 0 auto;
   width: 800px;
   padding: 15px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: helvetica;
+  background-image: url(Images/stars.jpg);
+  padding-top: 0;
 }
 
 header {
-  grid-column: 1 / span 2;
-  background: #eaeaea;
+  grid-column: 1 / span 4;
+  background: black;
   display: grid;
-  grid-template-columns: 70% 15% 15%;
+  grid-template-columns: 500px 180px 100px;
   align-items: center;
-  justify-items: left left right;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
+  margin: 0;
+  position: fixed;
+  opacity: 95%;
 }
 header a {
-  color: darkgray;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+    #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
 }
+
 header a:hover {
-  color: white;
+  color: rgb(99, 197, 230);
 }
 main {
-  background: #eaeaea;
+  grid-column: 1 / span 4;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 600px;
+  margin-top: 20px;
+}
+main div h5 {
+  padding-top: 150px;
+  padding-left: px;
+}
+main div p {
+  padding: 20px;
+}
+main div img {
+  border-radius: 50%;
 }
 #firstArticle {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 100px;
+  margin-top: 90px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px 10px #888888;
+  margin-bottom: 10px;
 }
+h3 {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
 p {
   grid-column: 1 / span 2;
+  font-style: italic;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+#homebutton {
+  grid-column: 1 / span 2;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  border: none;
+  padding: 20px;
+  display: inline-block;
+  align-self: center;
+}
+#button a {
+  text-decoration: none;
 }
 aside {
-  background: #eaeaea;
+  grid-template-columns: 4 / span 5;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px;
+  margin-top: 90px;
+  position: fixed;
+  right: 230px;
+  width: 120px;
+  height: 400px;
+}
+aside div {
+  padding-top: 5px;
+}
+#profile {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding-top: 10px;
+}
+#asideLink {
+  grid-template-columns: 1 / span 2;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
 }
 
 /* Footer Home page */
 footer {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 4;
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 200px;
   justify-items: center;
-  background: #eaeaea;
-  grid-gap: 1em;
+  align-items: end;
+  background: white;
 }
 #footer-contacts {
-  height: 100px;
+  padding-top: 20px;
+  height: 20px;
 }
 #footer-navigation {
-  height: 100px;
+  padding-top: 20px;
+  height: 20px;
+  justify-self: start;
+}
+
+#footer-navigation a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
 }
 #footer-copyright {
+  padding-top: 20px;
+  padding-bottom: 40px;
   grid-column: 1 / span 3;
-  height: 100px;
+  height: 20px;
   justify-content: center;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Registration form page */
+#regForm {
+  margin: 0 auto;
+  padding: 300px;
+}
+#label {
+  color: white;
+}
+
+#regback {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+/* User info  page */
+
+.card {
+  grid-column: 1 / span 5;
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 20%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  margin-top: 20px;
+}
+.card h4,
+p,
+form {
+  padding: 10px;
+}
+.card form {
+  text-align: center;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#userPhoto {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 90%;
+}
+
+#userlabel {
+  color: black;
+}
+
+/* User edit  page */
+
+.card1 {
+  grid-column: 1 / span 5;
+  display: grid;
+  background: white;
+  width: 300px;
+  padding: 30px;
+  border-radius: 20%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  margin-top: 20px;
+}
+.card1 h4 {
+  padding-bottom: 40px;
+}
+#editBtn {
+  text-align: center;
+  padding: 60px 80px 0 0;
+}
+#fileBtn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#fileBtn input {
+  align-self: end;
 }

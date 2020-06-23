@@ -4,47 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home page</title>
   </head>
   <body>
-    <header>
-      <a href="home.html>"><img src="Images/logo.png" alt="cat_logo" /></a>
-      <a href="registration.html">Registration</a>
-      <a href="login.html">Login</a>
+    <header id="home">
+      <a href="home.html"><img src="Images/logo.png" alt="cat_logo" /></a>
+      <a href="registration.html" target="_blank">Registration</a>
+      <a href="login.html" target="_blank" id="login">Login</a>
     </header>
 
     <main>
       <div id="firstArticle">
         <img src="Images/elon.jpg" alt="Elon Musk" />
-        <h2>Elon Musk</h2>
+        <h5>by Hanneke Weitering</h5>
+        <h3>
+          Elon Musk 'overcome with emotion' after SpaceX's 1st astronaut launch
+        </h3>
         <p>
-          The first Tesla product, the Roadster sports car, debuted in 2008,
-          followed by the Model S sedan, which was introduced in 2012, and the
-          Model X SUV, which launched in 2015. Model S received Consumer
-          Reports’ Best Overall Car and has been named the Ultimate Car of the
-          Year by Motor Trend, while Model X was the first SUV ever to earn
-          5-star safety ratings in every category and sub-category in the
-          National Highway Traffic Safety Administration’s tests. In 2017, Tesla
-          began deliveries of Model 3, a mass-market electric vehicle with more
-          than 320 miles of range, and unveiled Tesla Semi, which is designed to
-          save owners at least $200,000 over a million miles based on fuel costs
-          alone. In 2019, Tesla unveiled Cybertruck, which will have better
-          utility than a traditional truck and more performance than a sports
-          car, as well as the Model Y compact SUV, which began customer
-          deliveries in early 2020.
+          "I'm really quite overcome with emotion on this day, so it's kind of
+          hard to talk, frankly," Musk said in a post-launch press conference at
+          NASA's Kennedy Space Center in Florida Saturday evening. "It's been 18
+          years working towards this goal, so it's hard to believe that it's
+          happened..."
         </p>
+        <p>June 6, 2020</p>
+        <button id="homebutton">
+          <a
+            href="https://www.space.com/elon-musk-emotional-spacex-astronaut-launch.html"
+            target="_blank"
+            >Read More</a
+          >
+        </button>
       </div>
-      <div>Blog2</div>
-      <div>Blog3</div>
+      <div id="firstArticle">
+        <img src="Images/nasa.png" alt="Elon Musk" />
+        <h5>by Jeff Foust</h5>
+        <h3>
+          Virgin Galactic to work with NASA on private orbital spaceflight
+          experiences
+        </h3>
+        <p>
+          WASHINGTON — Virgin Galactic announced June 22 it has signed an
+          agreement with NASA to support development of a program to train and
+          potentially procure rides for private individuals seeking to fly to
+          the International Space Station...
+        </p>
+        <p>June 18, 2020</p>
+        <button id="homebutton">
+          <a
+            href="https://spacenews.com/virgin-galactic-to-work-with-nasa-on-private-orbital-spaceflight-experiences/"
+            target="_blank"
+            >Read More</a
+          >
+        </button id="homebutton">
+      </div>
+      <div id="firstArticle">
+        <img src="Images/michael.jpg" alt="Michael Jordan" />
+        <h5>Jeff Foust</h5>
+        <h3>World View founders launch new stratospheric ballooning venture</h3>
+        <p>
+          WASHINGTON — Two entrepreneurs who founded a high-altitude ballooning
+          company nearly a decade ago have started a second such venture, hoping
+          to realize their original vision of giving the public a taste of
+          spaceflight...
+        </p>
+        <p>June 22, 2020</p>
+        <button id="homebutton">
+          <a
+            href="https://spacenews.com/world-view-founders-launch-new-stratospheric-ballooning-venture/"
+            target="_blank"
+            >Read More</a
+          >
+        </button>
+      </div>
     </main>
     <aside>
-      <div>Profile</div>
-      <div>Posts</div>
+      <a href="user-info.html" target="_blank"
+        ><img src="Images/profile.png" alt="profile"
+      /></a>
+      <a id="profile" href="user-info.html" target="_blank"
+      >Profile</a>
+      <img src="Images/posts.png" alt="post" />
+      <div id="seePosts">See posts:</div>
+      <img src="Images/icons8-multiline-text-32.png" alt="postt" />
+      <a id="asideLink" href="">Elon Musk 'overcome with emotion'</a>
+      <img src="Images/icons8-multiline-text-32.png" alt="postt" />
+      <a id="asideLink" href="">Virgin Galactic to work with NASA</a>
+      <img src="Images/icons8-multiline-text-32.png" alt="postt" />
+      <a id="asideLink" href="">New stratospheric ballooning venture </a>
     </aside>
     <footer>
-      <div id="footer-contacts">Contacts</div>
-      <div id="footer-navigation">Navigation</div>
-      <div id="footer-copyright">Copyright</div>
+      <div id="footer-contacts">
+        <a href="https://www.facebook.com/carmen.dinu.94" target="_blank"
+          ><img src="Images/icons8-facebook-32 (1).png" alt="cat_logo"
+        /></a>
+        <a href="https://twitter.com/NASA" target="_blank"
+          ><img src="Images/icons8-twitter-32.png" alt="cat_logo"
+        /></a>
+        <a href="https://mail.google.com/" target="_blank"
+          ><img src="Images/icons8-email-32.png" alt="cat_logo"
+        /></a>
+      </div>
+      <div id="footer-navigation">
+        <a href="#home">Home</a>
+        <a
+          href="#profile"
+          >Profile</a
+        >
+        <a href="#seePosts">Posts</a>
+        <a
+          href="#login"
+          >Login</a
+        >
+      </div>
+      <div id="footer-copyright">
+        Copyright (C) 2020 Carmen Dinu Terms & Conditions
+      </div>
     </footer>
   </body>
 </html>
