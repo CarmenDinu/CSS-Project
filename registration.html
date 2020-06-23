@@ -7,14 +7,26 @@
     <title>Registration form</title>
   </head>
   <body>
-    <div id="registration">
+    <main id="reg-container">
+      <img src="Images/cartoon-astronaut-008.jpg" alt="astronaut" />
       <form id="regForm" name="regForm">
-        <label id="label">Username: <input type="text" id="username" /></label>
-        <label id="label">Email: <input type="text" id="email" /></label>
-        <label id="label"> Password: <input type="password" id="pwd" /></label>
-        <input type="submit" class="login" value="Log In" />
+        <label id="label"
+          >Username: <input type="text" id="username" for="username"
+        /></label>
+        <label id="label"
+          >Email: <input type="text" id="email" for="email"
+        /></label>
+        <label id="label">
+          Password: <input type="password" id="pwd" for="password"
+        /></label>
+        <input
+          type="submit"
+          class="register"
+          value="Register"
+          aria-label="register"
+        />
       </form>
-    </div>
-    <a id="regback" href="home.html" target="_blank">Back to Home Page</a>
+    </main>
+    <a id="back" href="home.html" target="_blank">Back to Home Page</a>
   </body>
 </html>

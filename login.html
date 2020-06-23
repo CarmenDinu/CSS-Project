@@ -7,19 +7,21 @@
     <title>Login form</title>
   </head>
   <body>
-    <div id="registration">
+    <main id="log-container">
+      <img
+        src="Images/astronaut-space-cartoon-design-vector-10466945.jpg"
+        alt="login picture"
+      />
       <form id="regForm" name="regForm">
-        <label id="label">Username: <input type="text" id="username" /></label>
-        <label id="label">Password: <input type="password" id="pwd" /></label>
-        <input
-          type="submit"
-          class="login"
-          value="Log In"
-      
-        />
+        <label id="label"
+          >Username: <input type="text" id="username" for="username"
+        /></label>
+        <label id="label"
+          >Password: <input type="password" id="pwd" aria-label="password"
+        /></label>
+        <input type="submit" class="login" value="Log In" />
       </form>
-    </div>
-    <a id="regback" href="home.html" target="_blank">Back to Home Page</a>
-  </body>
+    </main>
+    <a id="back" href="home.html" target="_blank">Back to Home Page</a>
   </body>
 </html>
