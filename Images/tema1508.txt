@@ -1,0 +1,6 @@
+- Create a pictures class with a property named urls which is a an object that has as properties different car models and as values an url (local or internet) of that car model.
+- Create a car class which has the properties: model, fabrication year and prictureUrl. Based on the value of the model property, the value of the pictureUrl is taken from the pictures class urls property. If that model is not found in the pictures property then a standard default picture url is set.
+
+
+- add 2 input boxes which take car model and year of fabrication
+Bellow the input boxes there is a button which when pressed creates a new car class with properties from the input box. After the car is created it is displayed in the dom with the picture, model and year in a bootrstrap card
